@@ -1,0 +1,59 @@
+.md-typeset h1 {
+  font-weight: normal;
+  color: var(--md-default-fg-color);
+  padding-bottom: 0.1em;
+}
+
+.md-typeset h2 {
+  font-weight: normal;
+  border-bottom: 2px dotted var(--md-default-fg-color);
+  padding: 0.3em 0 0.1em;
+}
+
+.md-typeset > ::before {
+  font-family: "FontAwesome";
+  margin-right: 0.5em;
+  display: inline-block;
+}
+
+.md-typeset h1::before {
+  content: "\f015";
+}
+
+.md-typeset h2::before {
+  content: "\f0a9";
+}
+
+.md-typeset h3::before {
+  content: "\f0da";
+}
+
+.md-typeset a:not([class])::before {
+  font-family: "FontAwesome";
+  margin-right: 0.2em;
+  content: "\f14c";
+}
+
+.md-typeset a:not([class]) {
+  border-bottom: 1px dotted #757575;
+}
+
+.md-typeset > table.highlighttable {
+  margin-left: 1em;
+}
+
+.md-typeset > ul {
+  margin-left: 1em;
+}
+
+.md-typeset > ol li,
+.md-typeset > ul li {
+  margin-bottom: 0.1em;
+}
+
+.md-typeset > ol li ol,
+.md-typeset > ol li ul,
+.md-typeset > ul li ol,
+.md-typeset > ul li ul {
+  margin-top: 0.1em;
+}
