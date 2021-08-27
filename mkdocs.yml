@@ -1,0 +1,36 @@
+site_name: 環境構築メモ
+copyright: Copyright &copy 2021 hao.c
+
+theme:
+  name: material
+  language: ja
+  font:
+    text: Noto Sans JP
+    code: Inconsolata
+  features:
+    - navigation.instant
+    - navigation.tabs
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - pymdownx.highlight:
+      linenums: true
+  - pymdownx.keys
+  - pymdownx.magiclink
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  # - toc:
+  #     permalink: true
+
+extra_css:
+  - stylesheets/extra.css
+  - https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css
+
+nav:
+  - はじめに: index.md
+  - Python: python.md
+  - PowerShell: powershell.md
